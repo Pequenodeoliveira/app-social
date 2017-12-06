@@ -1,0 +1,12 @@
+<h2>
+  <div class="div-titulo">
+    <label value="Título">Listar Usuário</label>
+  </div>
+</h2>
+<ul>
+    <div *ngFor="let u of us">
+        <li>{{u.nome}}</li>
+
+        <button mat-raised-button color="warn" (click)="rmUsuario(u.nome)">Remover {{u.nome}}</button>
+    </div>
+</ul>
