@@ -6,6 +6,7 @@ import {AppComponent} from './app.component';
 import {MatInputModule, MatButtonModule, MatCheckboxModule, MatCardModule} from '@angular/material';
 import {AppRoutingModule} from './app-routing.module';
 import {UsuarioModule} from './usuario/usuario.module';
+import {FeedModule} from './feed/feed.module';
 
 @NgModule({
   declarations: [
@@ -14,7 +15,7 @@ import {UsuarioModule} from './usuario/usuario.module';
   imports: [
     BrowserModule, FormsModule,
     MatInputModule, MatButtonModule, MatCheckboxModule, MatCardModule,
-    UsuarioModule,
+    UsuarioModule, FeedModule,
     AppRoutingModule
   ],
   providers: [],

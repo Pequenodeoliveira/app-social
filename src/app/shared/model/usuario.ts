@@ -1,3 +1,5 @@
+import {Postagem} from "./postagem"
+
 export class Usuario {
   nome: string;
   login: string;
@@ -5,4 +7,5 @@ export class Usuario {
   senha: string;
   idade: number;
   dataNascimento: Date;
+  postagens: Postagem[] = [];
 }

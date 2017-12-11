@@ -1,0 +1,16 @@
+<h2>
+  <div class="div-titulo">
+    <label value="Título">Bem Vindo {{u.nome}}</label>
+  </div>
+</h2>
+<mat-form-field class="col s12">
+    <textarea matInput [(ngModel)]="p.conteudo" placeholder="Poste alguma coisa:"></textarea>
+</mat-form-field>
+
+<button mat-raised-button color="primary" (click)="postar()">
+    Postar
+</button>
+
+<ul>
+    <li *ngFor="let p of u.postagens">{{p.conteudo}}</li>
+</ul>

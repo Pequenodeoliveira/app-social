@@ -4,6 +4,8 @@ import {AppComponent} from './app.component';
 import {CadastroUsuarioComponent} from './usuario/cadastro-usuario/cadastro-usuario.component';
 import {ListaUsuarioComponent} from './usuario/lista-usuario/lista-usuario.component';
 import {AtualizaUsuarioComponent} from './usuario/atualiza-usuario/atualiza-usuario.component';
+import {LogarUsuarioComponent} from './usuario/logar-usuario/logar-usuario.component';
+import {PrincipalComponent} from './feed/principal/principal.component';
 
 const routes: Routes = [
   {
@@ -21,6 +23,14 @@ const routes: Routes = [
       {
         path: 'usuario/lista',
         component: ListaUsuarioComponent
+      },
+      {
+        path: 'usuario/logar',
+        component: LogarUsuarioComponent
+      },
+      {
+        path: 'usuario/feed',
+        component: PrincipalComponent
       }
     ],
   }
